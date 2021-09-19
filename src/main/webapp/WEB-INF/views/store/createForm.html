@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="frm-create">
+    <form id="frmCreateCustomer">
+        <fieldset class="row g-3">
+            <legend>PC information</legend>
+            <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" name="price">
+            </div>
+            <div class="col-md-12">
+                <input type="button" id="btnCreateCustomer" class="btn btn-outline-primary" value="Create customer">
+            </div>
+        </fieldset>
+    </form>
+</th:block>
